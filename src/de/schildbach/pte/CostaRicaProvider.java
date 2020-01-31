@@ -25,7 +25,7 @@ import okhttp3.HttpUrl;
 public class CostaRicaProvider extends AbstractNavitiaProvider {
 
     private static String API_REGION = "default";
-    private static HttpUrl API_BASE = HttpUrl.parse("http://localhost:9191/").newBuilder().addPathSegment(SERVER_VERSION).build();
+    private static HttpUrl API_BASE = HttpUrl.parse("http://localhost:9191/v1").newBuilder().addPathSegment(SERVER_VERSION).build();
 
 
     public CostaRicaProvider(final HttpUrl apiBase, final String authorization) {
